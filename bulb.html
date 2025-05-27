@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Control</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bulb Control</h1>
+        <img id="bulbImage" src="https://en.wikipedia.org/wiki/File:Gluehlampe_01_KMJ.png" alt="Bulb is off">
+
+        <div class="controls">
+            <div class="control-group">
+                <input type="radio" id="radioOn" name="bulbState" value="on">
+                <label for="radioOn">ON</label>
+                <input type="radio" id="radioOff" name="bulbState" value="off" checked>
+                <label for="radioOff">OFF</label>
+            </div>
+
+            <div class="control-group">
+                <button id="buttonOn" class="on">Turn ON</button>
+                <button id="buttonOff" class="off">Turn OFF</button>
+            </div>
+
+            <div class="control-group">
+                <input type="checkbox" id="checkboxToggle">
+                <label for="checkboxToggle">Toggle Bulb</label>
+            </div>
+
+            <div class="control-group">
+                <button id="unifiedToggleButton" class="toggle">Toggle State</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bulb.js"></script>
+</body>
+</html>

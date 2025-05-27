@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Display</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enter Your Name</h1>
+        <input type="text" id="userNameInput" placeholder="Type your name here">
+        <button onclick="displayName()">Display Name</button>
+
+        <div class="display-area">
+            <h2>Your Name Displayed In</h2>
+
+            <div class="display-item">
+                <h3>As an h1 Heading:</h3>
+                <h1 id="nameAsH1"></h1>
+            </div>
+
+            <div class="display-item">
+                <h3>As a Paragraph:</h3>
+                <p id="nameAsParagraph"></p>
+            </div>
+
+            <div class="display-item">
+                <h3>As a Div:</h3>
+                <div id="nameAsDiv"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="input.js"></script>
+
+</body>
+</html>
